@@ -33,6 +33,17 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+#gems for sneakers
+gem 'sneakers'
+gem 'json'
+gem 'redis'
+
+#for gcp bigquery
+gem 'google-cloud-bigquery', '~> 1.10.0'
+
+#for otb structural
+gem 'structural'
+
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
@@ -42,6 +53,7 @@ group :development, :test do
 end
 
 group :development do
+  gem 'foreman'
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '>= 3.0.5', '< 3.2'
